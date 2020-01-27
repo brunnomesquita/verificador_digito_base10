@@ -48,18 +48,15 @@ class Verificador {
         $separa_soma = "";
         $resultado_soma = 0;
 
-        //var_dump($res_mult);
-        //echo '<br>';
-
         for ($j = 0; $j < count($res_mult); $j++) {
-            //echo $res_mult[$j] . '<br>';
+            
             $separa_soma = str_split($res_mult[$j]);
-            //var_dump(count($separa_soma));
+            
             if(count($separa_soma) > 1) {
-                //echo intval($separa_soma[0]) + intval($separa_soma[1]) . '<br>';
+                
                 $resultado_soma += intval($separa_soma[0]) + intval($separa_soma[1]);
             } else {
-                //echo intval($separa_soma[0]) . '<br>';
+                
                 $resultado_soma += intval($separa_soma[0]);
             }
 
@@ -73,7 +70,5 @@ class Verificador {
             return "Agência: " . $agencia . " / Conta: " . $conta . "-" . $digito . " não é uma conta válida";
         }
 
-    }
-
-// Fim da clase    
+    }   
 }
